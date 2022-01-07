@@ -1,0 +1,62 @@
+<%- include("includes/_header") %>
+
+    <div class="container mt-4">
+
+        <div class="row">
+            <div class="col col-12 col-md-8">
+                <h1>
+                    <%= $page.title %>
+                </h1>
+
+                <% if ($page.image) { %>
+                    <p>
+                        <img class="img-fluid" src="/<%= $page.$path %>/<%= $page.image %>">
+                    </p>
+                    <% } %>
+
+                <div style="max-width: 30rem;">
+                    <%- $page.$content %>
+                </div>
+            </div>
+            <div class="col col-12 col-md-4">
+
+                <p>
+                    <% const author = site.__authors['__' + $page.author]; %>
+                    <% if (author) { %>
+                        <a href="/<%= author.$path %>" class="text-decoration-none fw-bold text-white">
+                        
+                            <%- include("includes/_author-img.ejs", {author}) %>
+                            <%= author.title %>
+                        </a>
+                    <% } %>
+                </p>
+                
+                <p class="fw-light">
+                    <%= $page.description %>
+
+                    <% for(const tag of ($page.tags || [])) { %>
+                        <a href="#" class="text-success text-decoration-none fw-normal">
+                            #<%= tag %>
+                        </a>
+                    <% } %>
+                </p>
+
+                <div class="mt-4 mb-4">
+
+                    <% if ($page.zip_url) { %>
+                    <a class="btn btn-primary mb-2" href="<%= $page.zip_url %>">
+                        Download
+                    </a>
+                    <% } %>
+
+                    <a class="btn btn-secondary mb-2" href="<%= $page.website %>">
+                        Project Website &RightArrow;
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <%- include("includes/_footer") %>

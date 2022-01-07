@@ -1,0 +1,14 @@
+<%- include("includes/_header") %>
+
+    <div class="container mt-4">
+
+        <%- include("includes/_itemgrid.ejs", {
+            examples: [],
+            starters: [],
+            websites: [],
+            plugins: site.__plugins.$pages,
+            libs: []
+        }) %>
+    </div>
+
+    <%- include("includes/_footer") %>

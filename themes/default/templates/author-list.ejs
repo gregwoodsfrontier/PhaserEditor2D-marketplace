@@ -1,0 +1,24 @@
+<%- include("includes/_header") %>
+
+    <div class="container mt-4">
+
+        <div class="container mt-4">
+
+            <h3 class="mt-4">
+                <%= $page.title %>
+            </h3>
+
+            <p class="fw-light mb-4"><%= $page.description %></p>
+    
+            <div class="list-group">
+                <% for(const author of $page.$pages) { %>
+                    <a href="/<%= author.$path %>" class="list-group-item list-group-item-action bg-transparent fw-bold">
+                        <%- include("includes/_author-img.ejs", {author}) %>
+                        <%= author.title %>
+                    </a>
+                <% } %>
+            </div>
+    </div>
+
+
+    <%- include("includes/_footer") %>

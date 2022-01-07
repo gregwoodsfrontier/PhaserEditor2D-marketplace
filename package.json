@@ -7,6 +7,7 @@
     "scripts": {
         "start": "nodemon index.js --watch themes --watch content  -e ejs,png,jpg,md,css,html,conf",
         "server": "http-server www",
+        "build": "node index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Arian Fornaris <developers@phasereditor2d.com> (https://phasereditor2d.com/)",
@@ -14,9 +15,7 @@
     "devDependencies": {
         "@types/node": "^16.11.11",
         "http-server": "^14.0.0",
-        "nodemon": "^2.0.15"
-    },
-    "dependencies": {
-        "staticojs": "file:../staticojs"
+        "nodemon": "^2.0.15",
+        "staticojs": "^1.0.1"
     }
 }

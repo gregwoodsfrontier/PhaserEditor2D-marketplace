@@ -8,15 +8,17 @@
     
     <!-- open-graph card -->
     <% const title = site === $page? site.title : ($page.title + " | " + site.title) %>
+    <% const image = $page.socialImage || $page.image %>
+
     <meta name="og:title" content="<%= title %>">
     <meta name="og:description" content="<%= $page.description %>">
-    <meta name="og:image" content="<%= site.socialImage %>">
+    <meta name="og:image" content="<%= image %>">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@PhaserEditor2D">
     <meta name="twitter:creator" content="@PhaserEditor2D">
     <meta name="twitter:title" content="<%= title %>">
     <meta name="twitter:description" content="<%= $page.description %>">
-    <meta name="twitter:image" content="<%= site.socialImage %>">
+    <meta name="twitter:image" content="<%= image %>">
     
 
     <!-- website-->

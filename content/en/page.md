@@ -1,7 +1,8 @@
 ---
 title: Marketplace | Phaser Editor 2D
-logo_image: logo.png
-description: A marketplace for Phaser Editor 2D & Phaser.
+socialImage: https://marketplace.phasereditor2d.com/assets/social-image.jpg
+favicon: /assets/favicon.png
+description: Community project templates, examples, libraries, plugins, assets, tutorials.
 menu:
     - examples
     - starters

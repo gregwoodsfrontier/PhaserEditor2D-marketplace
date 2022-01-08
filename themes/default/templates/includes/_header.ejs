@@ -8,7 +8,7 @@
     
     <!-- open-graph card -->
     <% const title = site === $page? site.title : ($page.title + " | " + site.title) %>
-    <% const image = $page.socialImage || $page.image %>
+    <% const image = $page.socialImage || `${site.baseUrl}/${$page.$path}/${$page.image}` %>
 
     <meta name="og:title" content="<%= title %>">
     <meta name="og:description" content="<%= $page.description %>">

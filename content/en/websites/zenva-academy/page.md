@@ -15,5 +15,5 @@ tags:
 
 Trusted by 1,000,000 learners and developers, Zenva provides world-class training on in-demand programming skills.
 
+- [HTML5/Phaser courses](https://academy.zenva.com/product-category/all/game-development/html5-frameworks/)
 - [All Courses](https://academy.zenva.com/shop/)
-- [Phaser tutorials](https://phasertutorials.com/)

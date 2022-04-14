@@ -19,7 +19,8 @@ for (const kind of ["starters", "examples"]) {
             description,
             image,
             zip_url,
-            tags } = itemData;
+            tags,
+        author } = itemData;
 
         outputData.push({
             path: `${kind}/${$name}`,
@@ -27,7 +28,8 @@ for (const kind of ["starters", "examples"]) {
             description,
             image: `${kind}/${$name}/${image}`,
             zip_url,
-            tags
+            tags,
+            author
         });
     }
 

@@ -11,6 +11,16 @@ for (const kind of ["starters", "examples"]) {
 
     const outputData = [];
 
+    const pages = inputData.$pages;
+    
+    pages.sort((a, b) => {
+
+        const aa = a.author === "phasereditor2d"? 0 : 1;
+        const bb = b.author === "phasereditor2d"? 0 : 1;
+
+        return aa - bb;
+    });
+
     for (const itemData of inputData.$pages) {
 
         const {
@@ -20,7 +30,7 @@ for (const kind of ["starters", "examples"]) {
             image,
             zip_url,
             tags,
-        author } = itemData;
+            author } = itemData;
 
         outputData.push({
             path: `${kind}/${$name}`,

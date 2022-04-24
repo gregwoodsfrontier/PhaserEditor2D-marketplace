@@ -9,7 +9,7 @@ author: MerlinEl
 tags: ["javascript", "menu"]
 ---
 
-Phaser Project with some basic examples created in Phaser Editor 2D.
+This is an Phaser project with some basic examples created in Phaser Editor 2D.
 
 This is a *Phaser Editor 2D* project.
 In this project I was do an ressearch about some mechanics which is need 

@@ -1,7 +1,7 @@
 ---
 title: Merlin's Playground
 description: Phaser Project with some basic examples created in Phaser Editor 2D.
-image: assets/menu.png
+image: assets/menu.jpg
 zip_url: https://github.com/MerlinEl/Phaser3-with-Editor-Basic/archive/refs/heads/master.zip
 website: http://cestaslunce.cz/testy/Phaser3-with-Editor-Basic
 gitpod_url: https://gitpod.io/#https://github.com/MerlinEl/Phaser3-with-Editor-Basic

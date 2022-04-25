@@ -6,7 +6,7 @@ zip_url: https://github.com/MerlinEl/Phaser3-with-Editor-Basic/archive/refs/head
 website: https://github.com/MerlinEl/Phaser3-with-Editor-Basic
 gitpod_url: https://gitpod.io/#https://github.com/MerlinEl/Phaser3-with-Editor-Basic
 demo: http://cestaslunce.cz/testy/Phaser3-with-Editor-Basic
-author: MerlinEl
+author: merlinel
 tags: ["javascript", "menu"]
 ---
 

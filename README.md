@@ -46,6 +46,12 @@ If you want to contribute to this repository, please, fork it and make a pull re
 
 If you have no experience with GitHub or this is too complex for you, please, create an issue with the data you want to add and I will add it for you.
 
+## Some considerations when adding content
+
+* Use only alpha-numeric characters in the name of the folders, and the `-` char as separator.
+* If you add a new project starter, example, plugin, etc... please, prefix the name of the folder with the name of your user. For example, if you are adding a new `point-and-click-example`, and your user name is `maria`, please, name the template's folder like this: `maria-point-and-click`.
+* Please, use the JPG format for the banner & screenshot images. Only use PNG images when transparency is required.
+
 ## TODO
 
 For now, the priority is to add more content to the website and create a friendly, visual, local, admin interface.

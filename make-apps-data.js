@@ -28,6 +28,7 @@ for (const kind of ["starters", "examples"]) {
             title,
             description,
             image,
+            website,
             zip_url,
             tags,
             author } = itemData;
@@ -37,6 +38,7 @@ for (const kind of ["starters", "examples"]) {
             title,
             description,
             image: `${kind}/${$name}/${image}`,
+            website,
             zip_url,
             tags,
             author

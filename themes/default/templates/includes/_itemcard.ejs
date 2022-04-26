@@ -12,10 +12,6 @@
         style="height: 10em;background-size: cover;background-position: center; background-image: url(/<%= page.$path %>/<%= page.image %>);"
         
         >
-        <!-- <img src="/<%= page.$path %>/<%= page.image %>" class="card-img-top" style="height: 10em;"
-            alt="<%= page.title %>">
-        -->
-        
     </a>
     <% } %>
 
@@ -23,6 +19,7 @@
         
         <p class="card-text fs-6 fw-light">
             <%= page.description %>
+            By <a href="/authors/<%= page.author %>"><%= page.author %></a>.
         </p>
     </div>
 </div>

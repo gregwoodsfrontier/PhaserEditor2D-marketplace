@@ -2,3 +2,7 @@
     for = "/*/assets/*"
     [headers.values]
     cache-control = "public, max-age=365000000, immutable"
+[[headers]]
+    for = "/_static/*"
+    [headers.values]
+    cache-control = "public, max-age=365000000, immutable"

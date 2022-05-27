@@ -1,11 +1,21 @@
+<% const official = list => list.filter(i => i.author === "phasereditor2d"); %>
+<% const community = list => list.filter(i => i.author !== "phasereditor2d"); %>
+
 <% if (starters.length > 0) { %>
+
 <h3 class="mt-4 mb-4">
     Project starters
+    <hr>
 </h3>
+
+<% if (official(starters).length > 0) { %>
+<p>
+    <h6 class="text-muted text-uppercase">Official</h6>
+</p>
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
-    <% for(const page of starters) { %>
+    <% for(const page of official(starters)) { %>
 
         <div class="col">
             <%- include("includes/_itemcard.ejs", {page, icon: "bi-star"}) %>
@@ -13,18 +23,42 @@
 
     <% }%>
 </div>
+<% } // end offical starters %>
 
-<% } %>
+<% if (community(starters).length > 0) { %>
+<p>
+    <h6 class="text-muted text-uppercase">Community</h6>
+</p>
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+    <% for(const page of community(starters)) { %>
+
+        <div class="col">
+            <%- include("includes/_itemcard.ejs", {page, icon: "bi-star"}) %>
+        </div>
+
+    <% }%>
+</div>
+<% } // end community starters %>
+
+<% } // end starters %>
 
 <% if (examples.length > 0) { %>
 
 <h3 class="mt-4 mb-4">
     Examples
+    <hr>
 </h3>
+
+<% if (official(examples).length > 0) { %> 
+<p>
+    <h6 class="text-muted text-uppercase">Official</h6>
+</p>
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
-    <% for(const page of examples) { %>
+    <% for(const page of official(examples)) { %>
 
         <div class="col">
             <%- include("includes/_itemcard.ejs", {page, icon: "bi-joystick"}) %>
@@ -33,14 +67,38 @@
         <% }%>
 </div>
 
-<% } %>
+<% } // end offical examples %>
+
+<% if (community(examples).length > 0) { %>
+<p>
+    <h6 class="text-muted text-uppercase">Community</h6>
+</p>
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+    <% for(const page of community(examples)) { %>
+
+        <div class="col">
+            <%- include("includes/_itemcard.ejs", {page, icon: "bi-joystick"}) %>
+        </div>
+
+        <% }%>
+</div>
+<% } // end community examples %>
+
+<% } // end examples %>
 
 
 <% if (websites.length > 0) { %>
 
     <h3 class="mt-4 mb-4">
         Websites
+        <hr>
     </h3>
+
+    <p>
+        <h6 class="text-muted text-uppercase">Community</h6>
+    </p>
     
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
     
@@ -59,7 +117,12 @@
 
 <h3 class="mt-4 mb-4">
     Plugins
+    <hr>
 </h3>
+
+<p>
+    <h6 class="text-muted text-uppercase">Official</h6>
+</p>
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
@@ -80,7 +143,12 @@
 
 <h3 class="mt-4 mb-4">
     Libraries
+    <hr>
 </h3>
+
+<p>
+    <h6 class="text-muted text-uppercase">Community</h6>
+</p>
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
